@@ -61,8 +61,7 @@ public class App {
             System.out.println("7. Пополнить счет");
             System.out.println("8. Посмотреть баланс");
             System.out.println("9. Изменить данные о товаре");
-            System.out.println("10. Удаление продукта");
-            System.out.println("11. Прибыль магазина");
+            System.out.println("10. Прибыль магазина");
 
             System.out.print("Выберите задачу: ");
             int task = scanner.nextInt();
@@ -110,10 +109,6 @@ public class App {
                     bookProductManager.ProductChange(products);
                     break;
                 case 10:
-                    System.out.println("10. Удаление продукта");
-                    bookProduct.removeProduct();
-                    break;
-                case 11:
                     System.out.println("11. Прибыль магазина");
                     shopManagers.ShopCashList(shops);
 

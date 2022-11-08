@@ -9,7 +9,7 @@ public class BookProductManager {
 
     Scanner scanner;
     File fileNames = new File("Список продуктов.txt");
-
+    
     public BookProductManager() {
         scanner = new Scanner(System.in);
     }
@@ -33,8 +33,8 @@ public class BookProductManager {
 
         FileWriter line = new FileWriter(fileNames, true);
         line.append("Название продукта: ").append(product.getTitle()).append(" - ");
-        line.append("Цена продукта: ").append(String.valueOf(product.getQuantity())).append(" - ");
-        line.append("Количество продукта: ").append(String.valueOf(product.getPrice()));
+        line.append("Количество продукта: ").append(String.valueOf(product.getQuantity())).append(" - ");
+        line.append("Цена продукта: ").append(String.valueOf(product.getPrice()));
         line.append("\n");
         line.close();
 
